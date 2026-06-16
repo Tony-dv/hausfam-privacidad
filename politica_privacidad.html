@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — HausFam</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; background: #f8f9fa; line-height: 1.7; }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+    .header { background: #1D1A3E; color: white; padding: 40px 24px; text-align: center; }
+    .header h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+    .header p { color: #9B99CC; font-size: 14px; }
+    .badge { display: inline-block; background: #534AB7; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-top: 12px; }
+    h2 { font-size: 20px; font-weight: 700; color: #1D1A3E; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #534AB7; }
+    h3 { font-size: 16px; font-weight: 600; color: #534AB7; margin: 20px 0 8px; }
+    p { font-size: 15px; color: #374151; margin-bottom: 14px; }
+    ul { margin: 0 0 14px 20px; }
+    ul li { font-size: 15px; color: #374151; margin-bottom: 6px; }
+    .highlight { background: #EEF2FF; border-left: 4px solid #534AB7; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+    .highlight p { margin: 0; font-weight: 500; }
+    .warning { background: #FEF2F2; border-left: 4px solid #DC2626; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+    .warning p { margin: 0; color: #DC2626; font-weight: 500; }
+    .contact-card { background: #1D1A3E; color: white; padding: 24px; border-radius: 16px; margin: 24px 0; }
+    .contact-card h3 { color: #9B99CC; margin: 0 0 12px; }
+    .contact-card p { color: #E0DFFF; margin: 4px 0; }
+    .contact-card a { color: #7C7AB8; }
+    .footer { text-align: center; padding: 32px; color: #94A3B8; font-size: 13px; border-top: 1px solid #E2E8F0; margin-top: 40px; }
+    .section-card { background: white; border-radius: 12px; padding: 24px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .update-date { text-align: right; font-size: 12px; color: #94A3B8; margin-top: 8px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th { background: #1D1A3E; color: white; padding: 10px 14px; text-align: left; font-size: 13px; }
+    td { padding: 10px 14px; border-bottom: 1px solid #E2E8F0; font-size: 14px; color: #374151; }
+    tr:nth-child(even) td { background: #F8FAFC; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🏠 Política de Privacidad</h1>
+  <p>HausFam — Gestión del Hogar para Familias</p>
+  <span class="badge">Última actualización: Junio 2026</span>
+</div>
+
+<div class="container">
+
+  <div class="highlight">
+    <p>📋 Esta política aplica a la aplicación móvil HausFam disponible en Google Play Store. Al usar HausFam, aceptas las prácticas descritas en esta política.</p>
+  </div>
+
+  <!-- 1. QUIÉN SOMOS -->
+  <div class="section-card">
+    <h2>1. Quién somos</h2>
+    <p><strong>HausFam</strong> es una aplicación móvil de gestión del hogar desarrollada por <strong>Antonio Medina</strong> (en adelante "nosotros", "el desarrollador"). La app está disponible en Google Play Store para dispositivos Android.</p>
+    <p><strong>Contacto del responsable de datos:</strong></p>
+    <div class="contact-card">
+      <h3>Responsable del tratamiento de datos</h3>
+      <p>📧 soporte@hausfam.app</p>
+      <p>🌐 <a href="https://hausfam.app">hausfam.app</a></p>
+      <p>📍 Ciudad de México, México</p>
+    </div>
+  </div>
+
+  <!-- 2. DATOS QUE RECOPILAMOS -->
+  <div class="section-card">
+    <h2>2. Datos que recopilamos</h2>
+    <h3>2.1 Datos de cuenta</h3>
+    <ul>
+      <li>Correo electrónico (para autenticación)</li>
+      <li>Nombre de usuario (opcional)</li>
+      <li>Contraseña cifrada (gestionada por Supabase Auth)</li>
+    </ul>
+
+    <h3>2.2 Datos del hogar</h3>
+    <ul>
+      <li>Nombre y tipo de propiedad</li>
+      <li>Información de vehículos (nombre, póliza, verificación)</li>
+      <li>Información de mascotas (nombre, fechas de vacunación)</li>
+      <li>Documentos con fechas de vencimiento</li>
+      <li>Servicios del hogar y fechas de pago</li>
+      <li>Inventario de despensa, herramientas y equipos</li>
+      <li>Tareas y tareas recurrentes</li>
+      <li>Eventos del calendario familiar</li>
+    </ul>
+
+    <h3>2.3 Datos personales sensibles (módulos privados)</h3>
+    <div class="warning">
+      <p>⚠️ Los módulos de Salud Femenina y Salud Masculina recopilan datos de salud personal. Estos datos están protegidos con Row Level Security (RLS) en Supabase — ningún otro usuario, administrador ni tercero puede acceder a ellos.</p>
+    </div>
+    <ul>
+      <li>Registros de ciclo menstrual y síntomas (Salud Femenina)</li>
+      <li>Registros de bienestar, ánimo y síntomas (Salud Masculina)</li>
+      <li>Niveles de estrés, ansiedad, sueño y energía</li>
+      <li>Etapa de vida y perfil hormonal (informativo, no diagnóstico)</li>
+    </ul>
+
+    <h3>2.4 Datos de dispositivo</h3>
+    <ul>
+      <li>Token de dispositivo para notificaciones push (FCM)</li>
+      <li>Plataforma del dispositivo (Android)</li>
+      <li>Configuración local de la app (tema, orden de módulos)</li>
+    </ul>
+
+    <h3>2.5 Datos que NO recopilamos</h3>
+    <ul>
+      <li>❌ Ubicación GPS</li>
+      <li>❌ Contactos del teléfono</li>
+      <li>❌ Fotos del carrete (solo fotos que el usuario sube explícitamente)</li>
+      <li>❌ Datos de navegación web</li>
+      <li>❌ Micrófonos o cámara sin consentimiento explícito</li>
+    </ul>
+  </div>
+
+  <!-- 3. CÓMO USAMOS LOS DATOS -->
+  <div class="section-card">
+    <h2>3. Cómo usamos tus datos</h2>
+    <table>
+      <tr><th>Dato</th><th>Propósito</th><th>Base legal</th></tr>
+      <tr><td>Correo y contraseña</td><td>Autenticación y acceso a la cuenta</td><td>Ejecución del contrato</td></tr>
+      <tr><td>Datos del hogar</td><td>Proveer las funcionalidades de la app</td><td>Ejecución del contrato</td></tr>
+      <tr><td>Datos de salud</td><td>Mostrar registros personales al propio usuario</td><td>Consentimiento explícito</td></tr>
+      <tr><td>Token FCM</td><td>Enviar notificaciones push de alertas</td><td>Consentimiento (permisos Android)</td></tr>
+      <tr><td>Fotos subidas</td><td>Mostrar evidencias en módulos de la app</td><td>Ejecución del contrato</td></tr>
+    </table>
+    <p><strong>No usamos tus datos para:</strong> publicidad, venta a terceros, perfilado comercial, análisis de comportamiento externo ni ningún fin distinto a proveer el servicio de HausFam.</p>
+  </div>
+
+  <!-- 4. ALMACENAMIENTO Y SEGURIDAD -->
+  <div class="section-card">
+    <h2>4. Almacenamiento y seguridad</h2>
+    <h3>Infraestructura</h3>
+    <ul>
+      <li><strong>Supabase</strong> — base de datos en la nube con cifrado en reposo y en tránsito (TLS 1.2+)</li>
+      <li><strong>Supabase Storage</strong> — almacenamiento privado de fotos con URLs firmadas de acceso temporal</li>
+      <li><strong>SQLite local</strong> — datos de configuración almacenados localmente en el dispositivo</li>
+    </ul>
+    <h3>Controles de acceso</h3>
+    <ul>
+      <li>Row Level Security (RLS) en Supabase — cada usuario solo accede a sus propios datos</li>
+      <li>Los módulos de salud tienen RLS adicional que los aísla completamente del resto del hogar</li>
+      <li>Los módulos de Tarjetas y Contraseñas requieren autenticación biométrica adicional</li>
+      <li>Las fotos en Storage son privadas — no tienen URL pública, solo URLs firmadas con expiración de 1 hora</li>
+    </ul>
+    <h3>Retención de datos</h3>
+    <p>Conservamos tus datos mientras tu cuenta esté activa. Al eliminar tu cuenta, todos tus datos son eliminados permanentemente de nuestros servidores en un plazo máximo de 30 días.</p>
+  </div>
+
+  <!-- 5. COMPARTIR DATOS CON TERCEROS -->
+  <div class="section-card">
+    <h2>5. Compartir datos con terceros</h2>
+    <div class="highlight">
+      <p>✅ HausFam NO vende, alquila ni comparte tus datos personales con terceros con fines comerciales o publicitarios.</p>
+    </div>
+    <p>Compartimos datos únicamente con los siguientes proveedores de infraestructura técnica:</p>
+    <table>
+      <tr><th>Proveedor</th><th>Propósito</th><th>Política de privacidad</th></tr>
+      <tr><td>Supabase Inc.</td><td>Base de datos y autenticación</td><td>supabase.com/privacy</td></tr>
+      <tr><td>Google Firebase (FCM)</td><td>Notificaciones push</td><td>firebase.google.com/support/privacy</td></tr>
+      <tr><td>Google AdMob</td><td>Publicidad en plan gratuito</td><td>policies.google.com/privacy</td></tr>
+    </table>
+    <p>Todos los proveedores están sujetos a acuerdos de procesamiento de datos y cumplen con GDPR y estándares internacionales de privacidad.</p>
+  </div>
+
+  <!-- 6. PUBLICIDAD -->
+  <div class="section-card">
+    <h2>6. Publicidad (plan gratuito)</h2>
+    <p>La versión gratuita de HausFam puede mostrar anuncios proporcionados por <strong>Google AdMob</strong>. AdMob puede usar identificadores de dispositivo para mostrar anuncios relevantes según las políticas de Google.</p>
+    <p>Los planes <strong>Pro</strong> y <strong>Luxury</strong> no muestran publicidad.</p>
+    <p>Puedes optar por no recibir publicidad personalizada en: Configuración de Android → Google → Anuncios → Inhabilitar la personalización de anuncios.</p>
+  </div>
+
+  <!-- 7. DATOS DE SALUD -->
+  <div class="section-card">
+    <h2>7. Datos de salud — aviso especial</h2>
+    <div class="warning">
+      <p>⚕️ Los módulos de Salud Femenina y Salud Masculina son herramientas de registro personal de divulgación general. NO constituyen diagnóstico médico ni reemplazan la consulta con un profesional de la salud.</p>
+    </div>
+    <ul>
+      <li>Los datos de salud están cifrados y aislados con RLS individual — ni los administradores del hogar pueden verlos</li>
+      <li>No compartimos datos de salud con ningún tercero, aseguradora, empleador ni entidad de salud</li>
+      <li>No usamos datos de salud para publicidad ni perfilado</li>
+      <li>Los datos de salud se eliminan permanentemente al eliminar la cuenta</li>
+      <li>El acceso requiere autenticación biométrica adicional</li>
+    </ul>
+    <p>Cumplimos con las políticas de contenido de salud de Google Play, incluyendo la <strong>Health apps declaration</strong> requerida en Play Console.</p>
+  </div>
+
+  <!-- 8. DERECHOS DEL USUARIO -->
+  <div class="section-card">
+    <h2>8. Tus derechos</h2>
+    <p>De acuerdo con el GDPR (UE), LGPD (Brasil), CCPA (California) y la Ley Federal de Protección de Datos Personales en Posesión de Particulares (México), tienes derecho a:</p>
+    <ul>
+      <li><strong>Acceso:</strong> solicitar una copia de todos tus datos personales</li>
+      <li><strong>Rectificación:</strong> corregir datos inexactos o incompletos</li>
+      <li><strong>Eliminación:</strong> solicitar la eliminación de todos tus datos ("derecho al olvido")</li>
+      <li><strong>Portabilidad:</strong> recibir tus datos en formato estructurado y legible por máquina</li>
+      <li><strong>Oposición:</strong> oponerte al procesamiento de tus datos para ciertos fines</li>
+      <li><strong>Revocación del consentimiento:</strong> retirar tu consentimiento en cualquier momento</li>
+    </ul>
+    <p>Para ejercer cualquiera de estos derechos, contáctanos en <strong>soporte@hausfam.app</strong>. Respondemos en un plazo máximo de 30 días.</p>
+    <h3>Cómo eliminar tu cuenta</h3>
+    <p>Puedes solicitar la eliminación de tu cuenta y todos tus datos enviando un correo a <strong>soporte@hausfam.app</strong> con el asunto "Eliminar mi cuenta". Eliminaremos todos tus datos en un plazo de 30 días.</p>
+  </div>
+
+  <!-- 9. MENORES -->
+  <div class="section-card">
+    <h2>9. Menores de edad</h2>
+    <p>HausFam no está dirigida a menores de 13 años. No recopilamos intencionalmente información personal de menores de 13 años sin el consentimiento verificable de los padres o tutores.</p>
+    <p>Si eres padre o tutor y crees que tu hijo menor de 13 años nos ha proporcionado información personal, contáctanos en <strong>soporte@hausfam.app</strong> para eliminar dicha información.</p>
+  </div>
+
+  <!-- 10. NOTIFICACIONES PUSH -->
+  <div class="section-card">
+    <h2>10. Notificaciones push</h2>
+    <p>HausFam usa notificaciones push para enviarte recordatorios sobre vencimientos, tareas pendientes y eventos del hogar. Para esto:</p>
+    <ul>
+      <li>Solicitamos permiso explícito antes de activar las notificaciones</li>
+      <li>Usamos Firebase Cloud Messaging (FCM) para el envío</li>
+      <li>Puedes desactivar las notificaciones en cualquier momento desde Configuración de Android</li>
+      <li>No enviamos notificaciones promocionales ni publicitarias</li>
+    </ul>
+  </div>
+
+  <!-- 11. TRANSFERENCIAS INTERNACIONALES -->
+  <div class="section-card">
+    <h2>11. Transferencias internacionales de datos</h2>
+    <p>Supabase almacena datos en servidores de Amazon Web Services (AWS) en Estados Unidos. Estas transferencias se realizan bajo las garantías adecuadas del GDPR, incluyendo cláusulas contractuales estándar.</p>
+    <p>Google Firebase procesa datos en múltiples regiones según su infraestructura global, bajo sus compromisos de privacidad y los Términos de Procesamiento de Datos de Google.</p>
+  </div>
+
+  <!-- 12. CAMBIOS -->
+  <div class="section-card">
+    <h2>12. Cambios a esta política</h2>
+    <p>Podemos actualizar esta política de privacidad ocasionalmente. Te notificaremos de cambios significativos mediante una notificación en la app o por correo electrónico.</p>
+    <p>La fecha de "última actualización" al inicio de este documento siempre reflejará cuándo se realizaron cambios.</p>
+    <p>El uso continuado de HausFam después de que los cambios entren en vigor constituye tu aceptación de la política revisada.</p>
+  </div>
+
+  <!-- 13. CONTACTO -->
+  <div class="section-card">
+    <h2>13. Contacto y reclamaciones</h2>
+    <div class="contact-card">
+      <h3>Para preguntas sobre privacidad</h3>
+      <p>📧 soporte@hausfam.app</p>
+      <p>🌐 hausfam.app/privacidad</p>
+      <p>⏱️ Tiempo de respuesta: máximo 30 días hábiles</p>
+    </div>
+    <p>Si consideras que el tratamiento de tus datos personales infringe la normativa aplicable, tienes derecho a presentar una reclamación ante la autoridad de protección de datos de tu país:</p>
+    <ul>
+      <li><strong>México:</strong> INAI (Instituto Nacional de Transparencia) — inai.org.mx</li>
+      <li><strong>Unión Europea:</strong> Autoridad de protección de datos de tu país</li>
+      <li><strong>España:</strong> AEPD (Agencia Española de Protección de Datos) — aepd.es</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 HausFam. Todos los derechos reservados.</p>
+    <p style="margin-top: 8px;">Esta política de privacidad está disponible en: <strong>hausfam.app/privacidad</strong></p>
+    <p class="update-date">Versión 1.0 — Junio 2026</p>
+  </div>
+
+</div>
+</body>
+</html>
