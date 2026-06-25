@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eliminar cuenta - HausFam</title>
+<style>
+  body {
+    font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: #C4DAFA;
+    color: #0F172A;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+  }
+  h1 {
+    color: #534AB7;
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+  .subtitulo {
+    color: #475569;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .section-card {
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  h2 {
+    color: #0F6E56;
+    font-size: 16px;
+    margin-top: 0;
+  }
+  ul, ol {
+    padding-left: 20px;
+    line-height: 1.7;
+  }
+  a {
+    color: #2563EB;
+  }
+  .pasos li {
+    margin-bottom: 10px;
+  }
+  .footer {
+    text-align: center;
+    color: #64748B;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Eliminar tu cuenta de HausFam</h1>
+    <p class="subtitulo">Antony David Flores Díaz · Desarrollador de HausFam · Actualizado: Junio 2026</p>
+
+    <div class="section-card">
+      <h2>Cómo solicitar la eliminación de tu cuenta</h2>
+      <p>Si deseas eliminar tu cuenta de HausFam y los datos asociados, sigue estos pasos:</p>
+      <ol class="pasos">
+        <li>Envía un correo a <strong>antonydavidfd@gmail.com</strong> desde la misma dirección de correo registrada en tu cuenta de HausFam.</li>
+        <li>Usa el asunto: <strong>"Solicitud de eliminación de cuenta - HausFam"</strong>.</li>
+        <li>Incluye el nombre con el que te registraste y, si lo recuerdas, el nombre del hogar (casa) al que perteneces dentro de la app.</li>
+        <li>Recibirás una confirmación de recepción dentro de las siguientes 48 horas.</li>
+      </ol>
+      <p>También puedes solicitar la eliminación directamente desde la app, en <strong>Ajustes → Mi perfil → Eliminar cuenta</strong> (cuando esta función esté disponible en tu versión instalada).</p>
+    </div>
+
+    <div class="section-card">
+      <h2>Qué datos se eliminan</h2>
+      <ul>
+        <li>Tu nombre, correo electrónico y credenciales de acceso (Supabase Auth)</li>
+        <li>Tus fotos almacenadas en HausFam (vehículos, mascotas, documentos, equipos, etc.)</li>
+        <li>Tu membresía y rol dentro de cualquier hogar al que pertenezcas</li>
+        <li>Tus tokens de notificaciones push (Firebase Cloud Messaging)</li>
+        <li>Cualquier dato biométrico asociado a tu dispositivo (la huella digital nunca se almacena en nuestros servidores; este punto aplica solo a la referencia local en tu propio dispositivo)</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h2>Qué datos se conservan y por cuánto tiempo</h2>
+      <ul>
+        <li>Si eres <strong>Super Administrador</strong> de un hogar con otros miembros activos, los registros del hogar (vehículos, documentos, mantenimiento, etc.) se conservan para que el resto de los miembros no pierda su información, salvo que solicites expresamente eliminar el hogar completo.</li>
+        <li>Los registros de transacciones de pago (si aplican a tu plan) se conservan hasta 5 años, conforme a obligaciones fiscales y legales aplicables en México.</li>
+        <li>Toda la demás información personal se elimina de nuestros servidores dentro de un plazo máximo de <strong>30 días naturales</strong> a partir de la confirmación de tu solicitud.</li>
+      </ul>
+    </div>
+
+    <div class="section-card">
+      <h2>Más información</h2>
+      <p>Consulta nuestra <a href="https://tony-dv.github.io/hausfam-privacidad/politica_privacidad.html">Política de Privacidad</a> completa para más detalles sobre el tratamiento de tus datos.</p>
+    </div>
+
+    <p class="footer">HausFam © 2026 · Responsable: Antony David Flores Díaz</p>
+  </div>
+</body>
+</html>
